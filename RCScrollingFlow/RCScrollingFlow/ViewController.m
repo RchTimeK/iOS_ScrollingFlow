@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    SETNAVIGTIONBAR(@"当前是两列瀑布流");
+    SETNAVIGTIONBAR(@"当前显示的是两列瀑布流");
     
     OneViewController * One=[[OneViewController alloc]init];
     TwoViewController * Two=[[TwoViewController alloc]init];

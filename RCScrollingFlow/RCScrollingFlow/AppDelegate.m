@@ -7,13 +7,10 @@
 //
 /*
  
- 
  * Email : NSObject_RC@163.com
-
  * GitHub: https://github.com/NSObject-RC
- 
- 
- */
+
+*/
 #import "AppDelegate.h"
 #import "ViewController.h"
 @interface AppDelegate ()
