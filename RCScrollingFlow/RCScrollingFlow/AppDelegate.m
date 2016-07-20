@@ -5,9 +5,17 @@
 //  Created by RongCheng on 16/7/20.
 //  Copyright © 2016年 RongCheng. All rights reserved.
 //
+/*
+ 
+ 
+ * Email : NSObject_RC@163.com
 
+ * GitHub: https://github.com/NSObject-RC
+ 
+ 
+ */
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController=[[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]  ];
+    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 
