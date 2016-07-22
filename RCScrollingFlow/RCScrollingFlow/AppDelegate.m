@@ -13,6 +13,7 @@
 */
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "RCTopWindow.h"
 @interface AppDelegate ()
 
 @end
@@ -44,10 +45,25 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // 添加一个window 点击这个window，可以让屏幕上的scrollView滚到最顶部
+        [RCTopWindow show];
+    });
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//当收到Received memory warning.会调用次方法
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
+    
+    SDWebImageManager *mgr = [SDWebImageManager sharedManager];
+    //取消下载
+    [mgr cancelAll];
+    //清空缓存
+    [mgr.imageCache clearMemory];
+    
 }
 
 @end

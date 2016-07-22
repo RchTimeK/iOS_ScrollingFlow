@@ -65,6 +65,7 @@
 		51325AE61D3FA5A900D8BB97 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51325AB21D3FA5A900D8BB97 /* ShowViewController.m */; };
 		51325AE71D3FA5A900D8BB97 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51325AB41D3FA5A900D8BB97 /* ThirdViewController.m */; };
 		51325AE81D3FA5A900D8BB97 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51325AB61D3FA5A900D8BB97 /* TwoViewController.m */; };
+		514869271D40544E00740F8A /* RCTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 514869261D40544E00740F8A /* RCTopWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +205,8 @@
 		51325AB51D3FA5A900D8BB97 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		51325AB61D3FA5A900D8BB97 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		51325AE91D3FA5E300D8BB97 /* Scrolling.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scrolling.pch; sourceTree = "<group>"; };
+		514869251D40544E00740F8A /* RCTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopWindow.h; sourceTree = "<group>"; };
+		514869261D40544E00740F8A /* RCTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +303,7 @@
 		51325A411D3FA5A900D8BB97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				514869241D40542700740F8A /* RCTopWindow */,
 				51325A421D3FA5A900D8BB97 /* ImageClick */,
 				51325A451D3FA5A900D8BB97 /* RCSegmentView */,
 				51325A481D3FA5A900D8BB97 /* Tool */,
@@ -524,6 +528,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		514869241D40542700740F8A /* RCTopWindow */ = {
+			isa = PBXGroup;
+			children = (
+				514869251D40544E00740F8A /* RCTopWindow.h */,
+				514869261D40544E00740F8A /* RCTopWindow.m */,
+			);
+			name = RCTopWindow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -658,6 +671,7 @@
 				51325AE21D3FA5A900D8BB97 /* UIImageView+HighlightedWebCache.m in Sources */,
 				51325ACE1D3FA5A900D8BB97 /* MJRefreshNormalHeader.m in Sources */,
 				51325AC41D3FA5A900D8BB97 /* MJRefreshComponent.m in Sources */,
+				514869271D40544E00740F8A /* RCTopWindow.m in Sources */,
 				51325AB81D3FA5A900D8BB97 /* RCSegmentView.m in Sources */,
 				51325AD31D3FA5A900D8BB97 /* UIScrollView+MJRefresh.m in Sources */,
 				51325AB91D3FA5A900D8BB97 /* HttpRequest.m in Sources */,
@@ -934,6 +948,7 @@
 				51325A3A1D3FA51B00D8BB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51325A3B1D3FA51B00D8BB97 /* Build configuration list for PBXNativeTarget "RCScrollingFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -942,6 +957,7 @@
 				51325A3D1D3FA51B00D8BB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51325A3E1D3FA51B00D8BB97 /* Build configuration list for PBXNativeTarget "RCScrollingFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -950,6 +966,7 @@
 				51325A401D3FA51B00D8BB97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
